@@ -1,0 +1,6 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+lib/gemfirecache_store.rb
+lib/active_support/cache/gemfirecache_store.rb
