@@ -25,7 +25,7 @@ $:.unshift(File.dirname(__FILE__)) unless $:.include?(File.dirname(__FILE__)) ||
 
 if defined?(JRUBY_VERSION) && defined?(javax.cache)
   require 'java'
-  require 'active_support/cache/jcache_store' 
+  require 'active_support/cache/gemfirecache_store' 
 end
 
 module ActiveSupport
