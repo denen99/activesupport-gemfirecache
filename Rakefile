@@ -2,7 +2,7 @@
 
 require 'rubygems'
 require 'hoe'
-require './lib/gemfirecache_store.rb'
+require './lib/gemfire_cache_store.rb'
 
 Hoe.new('activesupport-gemfirecache', ActiveSupport::Cache::GemfireCacheStore::VERSION) do |p|
   p.developer('Adam Denenberg', 'adam@dberg.org')

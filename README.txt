@@ -15,14 +15,17 @@ ActiveSupport-gemfirecache is a jRuby on Rails extension that enables a GemFire 
 == INSTALL:
 
 * sudo gem install activesupport-gemfirecache 
+* cp gemfire.jar into lib directory (i.e., lib/ if using Rails)
+* need a copy of gemfireLicense.zip in root directory (root of Rails app if using Rails)
+
 
 == CONFIGURATION:
 
 In your config/environment.rb, add the following:
   
   if defined?(JRUBY_VERSION)
-    config.gem "activesupport-gemfirecache", :lib => 'gemfirecache_store'
-    config.cache_store = :gemfirecache_store
+    config.gem "activesupport-gemfirecache", :lib => 'gemfire_cache_store'
+    config.cache_store = :gemfire_cache_store
   end
 
 == LICENSE:
